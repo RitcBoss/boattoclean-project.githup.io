@@ -24,7 +24,10 @@ body {
 .nav-bar{
     display: flex;
     justify-content: center;
-    background-color: #161617;
+    background-color: #161617f0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 .nav__container{
     display: flex;
