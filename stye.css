@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --black-color : #161617;
+    --white-color : #ffffff;
+    --white-bg : #fff
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+    background-color: var(--white-bg);
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: center;
+    background-color: #161617;
+}
+.nav__container{
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    height: 40px;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--white-bg);
+    padding: 0 2cm;
+}
+.nav__container .logo{
+    margin-right: 30px;
+}
+
+.nav__container ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.nav__container ul li{
+    list-style: none;
+}
+.nav__container ul li a {
+    text-decoration: none;
+    color: var(--white-bg);
+    font-size: 12px;
+    font-weight: 300;
+    opacity: .8;
+    transition: all .3s ease;
+}
+.nav__container ul li a:hover{
+    opacity: 1;
+}
+
+.section-home-page{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    align-items: flex-end;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-bottom: 2cm;
+}
+
+.section-home-page-title{
+    display: block;
+    text-align: center;
+    color: var(--white-color);
+    cursor: default;
+}
+
+.section-home-page-title-hd{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.--title-lg{
+    font-size: 26px;
+    font-weight: 400;
+}
+.section-home-page-buttom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-home-page-buttom a {
+    background-color: var(--white-bg);
+    opacity: .8;
+    padding: 10px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--black-color);
+    transition: all .3s ease
+}
+.section-home-page-buttom a:hover{
+    opacity: 1;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 25px 50px -12px;
+}
+
+.background-clip{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio:16/9) {
+    .background-clip{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio:16/9){
+    .background-clip{
+        width: auto;
+        height: 100%;
+    }
+}
